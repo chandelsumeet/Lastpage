@@ -1,0 +1,88 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+#nav-c1
+{
+    display: none;
+}
+.nav-tab
+{
+    display: none;
+}
+#nav-c1:checked ~ .nav-tab
+{
+    display: grid;
+}
+.nav-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.nav-label
+{
+    justify-self: right;
+}
+.nav label
+{
+    color: white;
+    background-color: black;
+    width: 36px;
+    height: 29px;
+    display: block;
+    text-align: center;
+    padding: 3px;
+}
+.nav-tab
+{
+    background-color: black;
+    color: #fff;
+    padding: 0 1rem;
+    font-size: 12px;
+    line-height: 19px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.nav-tab div
+{
+    padding: 1rem;
+}
+.nav-border
+{
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+@media only screen and (min-width:769px)
+{
+    .nav-label
+    {
+        display: none;
+    }
+    .nav-tab
+    {
+        display: grid;
+        grid-template-columns: repeat(6,auto);
+        row-gap: ;
+    }
+    .nav-main
+    {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto;
+    }
+    .nav-tab
+    {
+        background-color: #fff;
+        color: #797979;
+    }
+    .nav
+    {
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        padding: 2rem 0;
+    }
+    
+
+}
